@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(12, 12, 12);
+}
+
+.score-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#userscore, #user {
+    float: left;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+#compscore, #comp {
+    float: right;
+    margin-top: 2rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+#result {
+    font-style: italic;
+    font-weight: 1000;
+    margin-top : 20px;
+}
+
+img {
+    width: 150px;
+    margin: 20% auto;
+}
+
+img:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
