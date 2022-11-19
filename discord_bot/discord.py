@@ -178,5 +178,17 @@ async def unban_error(ctx, error):
         await ctx.send("Missing (ID) argument")
         return
 
+@client.command()
+async def purge(ctx, amount:str):
+    if amount.lower() == 'all':
+        await ctx.channel.purge()
+        return
+    else:
+        try:
+            amount = int(amount) + 1
+            await ctx.channel.purge(limit=amount)
+        except:
+            await ctx.send("Amount has to be a valid integer")
+
 
 client.run(TOKEN)
